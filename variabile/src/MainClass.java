@@ -2,6 +2,30 @@ public class MainClass
 {
     public static void main(String[] args) {
 
+        int a = 4;
+        System.out.println("numarul int este: " + a);
+
+        double b = 4.13251325134d;
+        System.out.println("numarul double este: " + b);
+
+        short c = 123;
+        System.out.println("numarul short este: " + c);
+
+        long x = 13415134135123L;
+        System.out.println("numarul long este: " + x);
+
+        float y = 1.234f;
+        System.out.println("numarul float este: " + y);
+
+        boolean z = true;
+        System.out.println("boolean z este: " + z);
+
+        char litera = 'a';
+        System.out.println("char litera eset: " + litera);
+
+        String propozitie = "adsf aeta df adgg";
+        System.out.println("String propozitie este: " + propozitie);
+
     }
 }
 
