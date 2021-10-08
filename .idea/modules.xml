@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/array list/2d array list.iml" filepath="$PROJECT_DIR$/array list/2d array list.iml" />
       <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
       <module fileurl="file://$PROJECT_DIR$/array list/array list.iml" filepath="$PROJECT_DIR$/array list/array list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/array list(2d)/array list(2d).iml" filepath="$PROJECT_DIR$/array list(2d)/array list(2d).iml" />
       <module fileurl="file://$PROJECT_DIR$/gui inceput/gui inceput.iml" filepath="$PROJECT_DIR$/gui inceput/gui inceput.iml" />
       <module fileurl="file://$PROJECT_DIR$/math class/math class.iml" filepath="$PROJECT_DIR$/math class/math class.iml" />
       <module fileurl="file://$PROJECT_DIR$/string class/string class.iml" filepath="$PROJECT_DIR$/string class/string class.iml" />
