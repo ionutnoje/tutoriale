@@ -7,8 +7,13 @@ public class Car
     public Car(String make, String model, int year)
     {
 //        this.make = make;
-//        this.model = model;
+//        this.model = model; //putem sa lasam asa sau daca tot avem gettere si settere putem sa folosim direct settere
 //        this.year = year;
+
+          this.setMake(make);
+          this.setModel(model);
+          this.setYear(year);
+
     }
 
     public String getMake()
