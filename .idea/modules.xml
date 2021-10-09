@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/array list/2d array list.iml" filepath="$PROJECT_DIR$/array list/2d array list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BorderLayout/BorderLayout.iml" filepath="$PROJECT_DIR$/BorderLayout/BorderLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/File_class/File class.iml" filepath="$PROJECT_DIR$/File_class/File class.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileReader(read_a_file)/FileReader(read_a_file).iml" filepath="$PROJECT_DIR$/FileReader(read_a_file)/FileReader(read_a_file).iml" />
       <module fileurl="file://$PROJECT_DIR$/FileWriter(write_to_a_file)/FileWriter(write_to_a_file).iml" filepath="$PROJECT_DIR$/FileWriter(write_to_a_file)/FileWriter(write_to_a_file).iml" />
