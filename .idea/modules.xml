@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/FileWriter(write_to_a_file)/FileWriter(write_to_a_file).iml" filepath="$PROJECT_DIR$/FileWriter(write_to_a_file)/FileWriter(write_to_a_file).iml" />
       <module fileurl="file://$PROJECT_DIR$/FlowLayout/FlowLayout.iml" filepath="$PROJECT_DIR$/FlowLayout/FlowLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GridLayout/GridLayout.iml" filepath="$PROJECT_DIR$/GridLayout/GridLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/abstraction/abstraction.iml" filepath="$PROJECT_DIR$/abstraction/abstraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/access modifiers/access modifiers.iml" filepath="$PROJECT_DIR$/access modifiers/access modifiers.iml" />
       <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
