@@ -6,7 +6,7 @@ public class Main
         //JSlider = GUI component that lets user enter a value
         //          by using an asjustable sliding knob on a track
 
-        SliderDemo sliderDemo = new SliderDemo();
+        new SliderDemo();
 
 
 

@@ -13,27 +13,6 @@ public class SliderDemo implements ChangeListener
 
     public SliderDemo()
     {
-
-        //LABEL
-
-        label = new JLabel();
-        label.setText("grade = " + slider.getValue());
-        label.setFont(new Font("MV Boli",Font.PLAIN,20));
-
-
-
-
-
-        //PANEL
-
-        panel = new JPanel();
-        panel.add(slider);
-        panel.add(label);
-
-
-
-
-
         //SLIDER
 
         slider = new JSlider(0,100,50);
@@ -56,6 +35,30 @@ public class SliderDemo implements ChangeListener
         slider.addChangeListener(this);
 
 
+
+        //LABEL
+
+        label = new JLabel();
+        label.setText("grade = " + slider.getValue());
+        label.setFont(new Font("MV Boli",Font.PLAIN,20));
+
+
+
+
+
+        //PANEL
+
+        panel = new JPanel();
+        panel.add(slider);
+        panel.add(label);
+
+
+
+
+
+
+
+
         //FRAME
 
         frame = new JFrame("slider demo");
@@ -65,9 +68,6 @@ public class SliderDemo implements ChangeListener
 
 
     }
-
-
-
 
     @Override
     public void stateChanged(ChangeEvent e) {
