@@ -36,6 +36,7 @@
       <module fileurl="file://$PROJECT_DIR$/GUI/labels1.iml" filepath="$PROJECT_DIR$/GUI/labels1.iml" />
       <module fileurl="file://$PROJECT_DIR$/local vs global variables/local vs global variables.iml" filepath="$PROJECT_DIR$/local vs global variables/local vs global variables.iml" />
       <module fileurl="file://$PROJECT_DIR$/math class/math class.iml" filepath="$PROJECT_DIR$/math class/math class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menubar/menubar.iml" filepath="$PROJECT_DIR$/menubar/menubar.iml" />
       <module fileurl="file://$PROJECT_DIR$/method overriding/method overriding.iml" filepath="$PROJECT_DIR$/method overriding/method overriding.iml" />
       <module fileurl="file://$PROJECT_DIR$/methods/methods.iml" filepath="$PROJECT_DIR$/methods/methods.iml" />
       <module fileurl="file://$PROJECT_DIR$/object passing/object passing.iml" filepath="$PROJECT_DIR$/object passing/object passing.iml" />
