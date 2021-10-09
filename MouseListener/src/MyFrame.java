@@ -17,7 +17,7 @@ public class MyFrame extends JFrame implements MouseListener
         smile = new ImageIcon(new ImageIcon("MouseListener/src/smile.png").getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT));
         pain = new ImageIcon(new ImageIcon("MouseListener/src/pain.png").getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT));
         nervous = new ImageIcon(new ImageIcon("MouseListener/src/nervous.png").getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT));
-        dizzy = new ImageIcon(new ImageIcon("MouseListener/src/dizzy.png").getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT));
+        dizzy = new ImageIcon(new ImageIcon("MouseListener/src/dizzy1.png").getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT));
 
 
 

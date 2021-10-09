@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/combobox/combobox.iml" filepath="$PROJECT_DIR$/combobox/combobox.iml" />
       <module fileurl="file://$PROJECT_DIR$/constructors/constructors.iml" filepath="$PROJECT_DIR$/constructors/constructors.iml" />
       <module fileurl="file://$PROJECT_DIR$/copy objects/copy objects.iml" filepath="$PROJECT_DIR$/copy objects/copy objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/drag_panel(drag_and_drop)/drag_panel(drag_and_drop).iml" filepath="$PROJECT_DIR$/drag_panel(drag_and_drop)/drag_panel(drag_and_drop).iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamic polymorphism/dynamic polymorphism.iml" filepath="$PROJECT_DIR$/dynamic polymorphism/dynamic polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/encapsulation/encapsulation.iml" filepath="$PROJECT_DIR$/encapsulation/encapsulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/exception handling/exception handling.iml" filepath="$PROJECT_DIR$/exception handling/exception handling.iml" />
