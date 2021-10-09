@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/array of objects/array of objects.iml" filepath="$PROJECT_DIR$/array of objects/array of objects.iml" />
       <module fileurl="file://$PROJECT_DIR$/audio/audio.iml" filepath="$PROJECT_DIR$/audio/audio.iml" />
       <module fileurl="file://$PROJECT_DIR$/buttons/buttons.iml" filepath="$PROJECT_DIR$/buttons/buttons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/checkbox/checkbox.iml" filepath="$PROJECT_DIR$/checkbox/checkbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/constructors/constructors.iml" filepath="$PROJECT_DIR$/constructors/constructors.iml" />
       <module fileurl="file://$PROJECT_DIR$/copy objects/copy objects.iml" filepath="$PROJECT_DIR$/copy objects/copy objects.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamic polymorphism/dynamic polymorphism.iml" filepath="$PROJECT_DIR$/dynamic polymorphism/dynamic polymorphism.iml" />
