@@ -47,6 +47,7 @@
       <module fileurl="file://$PROJECT_DIR$/panels/panels.iml" filepath="$PROJECT_DIR$/panels/panels.iml" />
       <module fileurl="file://$PROJECT_DIR$/polymorphism/polymorphism.iml" filepath="$PROJECT_DIR$/polymorphism/polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/printf/printf.iml" filepath="$PROJECT_DIR$/printf/printf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progress bar/progress bar.iml" filepath="$PROJECT_DIR$/progress bar/progress bar.iml" />
       <module fileurl="file://$PROJECT_DIR$/radio buttons/radio buttons.iml" filepath="$PROJECT_DIR$/radio buttons/radio buttons.iml" />
       <module fileurl="file://$PROJECT_DIR$/slider/slider.iml" filepath="$PROJECT_DIR$/slider/slider.iml" />
       <module fileurl="file://$PROJECT_DIR$/static keyword/static keyword.iml" filepath="$PROJECT_DIR$/static keyword/static keyword.iml" />
