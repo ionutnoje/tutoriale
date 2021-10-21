@@ -45,6 +45,7 @@
       <module fileurl="file://$PROJECT_DIR$/menubar/menubar.iml" filepath="$PROJECT_DIR$/menubar/menubar.iml" />
       <module fileurl="file://$PROJECT_DIR$/method overriding/method overriding.iml" filepath="$PROJECT_DIR$/method overriding/method overriding.iml" />
       <module fileurl="file://$PROJECT_DIR$/methods/methods.iml" filepath="$PROJECT_DIR$/methods/methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multythreading/multythreading.iml" filepath="$PROJECT_DIR$/multythreading/multythreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/object passing/object passing.iml" filepath="$PROJECT_DIR$/object passing/object passing.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/open_a_new_GUI_window/open_a_new_GUI_window.iml" filepath="$PROJECT_DIR$/open_a_new_GUI_window/open_a_new_GUI_window.iml" />
