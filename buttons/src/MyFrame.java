@@ -11,7 +11,16 @@ public class MyFrame extends JFrame implements ActionListener
     public MyFrame() {
         button = new JButton();
         ImageIcon icon = new ImageIcon(new ImageIcon("buttons/src/ferrari.jpg").getImage().getScaledInstance(100,100, Image.SCALE_DEFAULT));
+
+
+
+
         ImageIcon image = new ImageIcon(new ImageIcon("buttons/src/dude.jpg").getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
+
+
+
+
+
         label = new JLabel();
 
 
