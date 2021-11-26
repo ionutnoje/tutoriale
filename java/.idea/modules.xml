@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/array list/2d array list.iml" filepath="$PROJECT_DIR$/array list/2d array list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BorderLayout/BorderLayout.iml" filepath="$PROJECT_DIR$/BorderLayout/BorderLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/File_class/File class.iml" filepath="$PROJECT_DIR$/File_class/File class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileReader(read_a_file)/FileReader(read_a_file).iml" filepath="$PROJECT_DIR$/FileReader(read_a_file)/FileReader(read_a_file).iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileWriter(write_to_a_file)/FileWriter(write_to_a_file).iml" filepath="$PROJECT_DIR$/FileWriter(write_to_a_file)/FileWriter(write_to_a_file).iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlowLayout/FlowLayout.iml" filepath="$PROJECT_DIR$/FlowLayout/FlowLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GridLayout/GridLayout.iml" filepath="$PROJECT_DIR$/GridLayout/GridLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JOptionPane/JOptionPane.iml" filepath="$PROJECT_DIR$/JOptionPane/JOptionPane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KeyListener/KeyListener.iml" filepath="$PROJECT_DIR$/KeyListener/KeyListener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LayeredPane/LayeredPane.iml" filepath="$PROJECT_DIR$/LayeredPane/LayeredPane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MouseListener/MouseListener.iml" filepath="$PROJECT_DIR$/MouseListener/MouseListener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MouseListener/MyFrame.iml" filepath="$PROJECT_DIR$/MouseListener/MyFrame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstraction/abstraction.iml" filepath="$PROJECT_DIR$/abstraction/abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/access modifiers/access modifiers.iml" filepath="$PROJECT_DIR$/access modifiers/access modifiers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/array list/array list.iml" filepath="$PROJECT_DIR$/array list/array list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/array list(2d)/array list(2d).iml" filepath="$PROJECT_DIR$/array list(2d)/array list(2d).iml" />
+      <module fileurl="file://$PROJECT_DIR$/array of objects/array of objects.iml" filepath="$PROJECT_DIR$/array of objects/array of objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/audio/audio.iml" filepath="$PROJECT_DIR$/audio/audio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buttons/buttons.iml" filepath="$PROJECT_DIR$/buttons/buttons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/checkbox/checkbox.iml" filepath="$PROJECT_DIR$/checkbox/checkbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/combobox/combobox.iml" filepath="$PROJECT_DIR$/combobox/combobox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/constructors/constructors.iml" filepath="$PROJECT_DIR$/constructors/constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/copy objects/copy objects.iml" filepath="$PROJECT_DIR$/copy objects/copy objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/drag_panel(drag_and_drop)/drag_panel(drag_and_drop).iml" filepath="$PROJECT_DIR$/drag_panel(drag_and_drop)/drag_panel(drag_and_drop).iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic polymorphism/dynamic polymorphism.iml" filepath="$PROJECT_DIR$/dynamic polymorphism/dynamic polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encapsulation/encapsulation.iml" filepath="$PROJECT_DIR$/encapsulation/encapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exception handling/exception handling.iml" filepath="$PROJECT_DIR$/exception handling/exception handling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/final keyword/final keyword.iml" filepath="$PROJECT_DIR$/final keyword/final keyword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/for each loop/for each loop.iml" filepath="$PROJECT_DIR$/for each loop/for each loop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gui inceput/gui inceput.iml" filepath="$PROJECT_DIR$/gui inceput/gui inceput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hashmap/hashmap.iml" filepath="$PROJECT_DIR$/hashmap/hashmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hashtable/hashtable.iml" filepath="$PROJECT_DIR$/hashtable/hashtable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inheritance/inheritance.iml" filepath="$PROJECT_DIR$/inheritance/inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interface/interface.iml" filepath="$PROJECT_DIR$/interface/interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcolorchooser( color chooser)/jcolorchooser( color chooser).iml" filepath="$PROJECT_DIR$/jcolorchooser( color chooser)/jcolorchooser( color chooser).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jfilechooser(select a file)/jfilechooser(select a file).iml" filepath="$PROJECT_DIR$/jfilechooser(select a file)/jfilechooser(select a file).iml" />
+      <module fileurl="file://$PROJECT_DIR$/labels/labels.iml" filepath="$PROJECT_DIR$/labels/labels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI/labels1.iml" filepath="$PROJECT_DIR$/GUI/labels1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/local vs global variables/local vs global variables.iml" filepath="$PROJECT_DIR$/local vs global variables/local vs global variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/math class/math class.iml" filepath="$PROJECT_DIR$/math class/math class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menubar/menubar.iml" filepath="$PROJECT_DIR$/menubar/menubar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/method overriding/method overriding.iml" filepath="$PROJECT_DIR$/method overriding/method overriding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/methods/methods.iml" filepath="$PROJECT_DIR$/methods/methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multythreading/multythreading.iml" filepath="$PROJECT_DIR$/multythreading/multythreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/object passing/object passing.iml" filepath="$PROJECT_DIR$/object passing/object passing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open_a_new_GUI_window/open_a_new_GUI_window.iml" filepath="$PROJECT_DIR$/open_a_new_GUI_window/open_a_new_GUI_window.iml" />
+      <module fileurl="file://$PROJECT_DIR$/overloaded constructors/overloaded constructors.iml" filepath="$PROJECT_DIR$/overloaded constructors/overloaded constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/methods/overloaded methods.iml" filepath="$PROJECT_DIR$/methods/overloaded methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/overloaded methodss/overloaded methodss.iml" filepath="$PROJECT_DIR$/overloaded methodss/overloaded methodss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/panels/panels.iml" filepath="$PROJECT_DIR$/panels/panels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polymorphism/polymorphism.iml" filepath="$PROJECT_DIR$/polymorphism/polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/printf/printf.iml" filepath="$PROJECT_DIR$/printf/printf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progress bar/progress bar.iml" filepath="$PROJECT_DIR$/progress bar/progress bar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/radio buttons/radio buttons.iml" filepath="$PROJECT_DIR$/radio buttons/radio buttons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slider/slider.iml" filepath="$PROJECT_DIR$/slider/slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/static keyword/static keyword.iml" filepath="$PROJECT_DIR$/static keyword/static keyword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/string class/string class.iml" filepath="$PROJECT_DIR$/string class/string class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super keyword/super keyword.iml" filepath="$PROJECT_DIR$/super keyword/super keyword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textfield/textfield.iml" filepath="$PROJECT_DIR$/textfield/textfield.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threads/threads.iml" filepath="$PROJECT_DIR$/threads/threads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/to string method/to string method.iml" filepath="$PROJECT_DIR$/to string method/to string method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tutoriale.iml" filepath="$PROJECT_DIR$/.idea/tutoriale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/variabile/variabile.iml" filepath="$PROJECT_DIR$/variabile/variabile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wrapper class/wrapper class.iml" filepath="$PROJECT_DIR$/wrapper class/wrapper class.iml" />
+    </modules>
+  </component>
+</project>
