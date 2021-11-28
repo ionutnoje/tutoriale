@@ -14,10 +14,9 @@ class Human
 
     public:
 
-        Human()
+        Human(): name("noname"), age(0)
         {
-            name = "noname";
-            age = 0;
+            
             cout << "constructor is called when an object of human is created" << endl;
         }
 
