@@ -22,7 +22,7 @@ int main()
     {
         for(int j = 0; j < width; j++)
         {
-            cout << symbol;
+            cout << symbol << " ";
         }
         cout << endl;
     }
