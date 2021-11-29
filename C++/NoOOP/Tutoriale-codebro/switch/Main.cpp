@@ -62,6 +62,7 @@ int main()
 
 
     default:
+        cout << "ai introdus o valoare gresita" << endl;
         break;
     }
 
