@@ -15,6 +15,14 @@ int main()
         cout << "variabila este egala cu 5" << endl;
 
     }
+    else if(variabila <= 5)
+    {
+        cout << "variabila este <= ca 5" << endl;
+    }
+    else if(variabila >= 5)
+    {
+        cout << "variabila este >= ca 5" << endl;
+    }
     else
     {
 
