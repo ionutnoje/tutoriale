@@ -16,7 +16,7 @@ int main()
     cin >> width;
 
     cout << "hight: " << endl;
-    cin >> width;
+    cin >> hight;
 
     for(int i = 0; i < hight; i++)
     {
