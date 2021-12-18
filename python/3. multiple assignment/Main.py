@@ -1,4 +1,4 @@
-# multiple assignment = allows us to assign multiple variables at the same time in one line of code
+# 3. multiple assignment = allows us to assign multiple 2. variables at the same time in one line of code
 
 
 #########################################################################
