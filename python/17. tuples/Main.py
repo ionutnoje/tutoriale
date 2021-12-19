@@ -13,3 +13,6 @@ for x in student:
 
 if "noje" in student:
     print("noje este in tuple")
+
+
+
