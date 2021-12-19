@@ -11,6 +11,8 @@ car = Car()
 
 car.turn_on()
 car.drive()
+car.brake()
+car.turn_off()
 
 ##########################################################################
 #method chaining
