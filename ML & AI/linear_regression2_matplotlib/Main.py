@@ -6,6 +6,8 @@ import numpy as np
 import sklearn
 from sklearn import linear_model
 from sklearn.utils import shuffle
+import matplotlib.pyplot as pyplot
+import pickle
 
 data = pd.read_csv("student-mat.csv", sep=";")  # asa o sa citeasca datele din document, iar fiecare atribut este delimitat de un ; de aceea o sa setam delimitatorul sa fie ; astfel o sa stie de unde sa ia datele
 
@@ -46,31 +48,3 @@ predictions = linear.predict(x_test) # pana acum am folosit x_train si y_train c
 
 for x in range(len(predictions)):
     print("predictia modelului: " + str(predictions[x]) + " atributele: " + str(x_test[x]) + " labelul: " + str(y_test[x]))
-
-
-
-# explicatii site techwithtim
-
-#           We will start by defining the model which we will be using.
-
-# linear = linear_model.LinearRegression()
-#           Next we will train and score our model using the arrays we created in the previous tutorial.
-
-# linear.fit(x_train, y_train)
-# acc = linear.score(x_test, y_test) # acc stands for accuracy
-#           To see how well our algorithm performed on our test data we can print out the accuracy.
-
-# print(acc)
-#           For this specific data set a score of above 80% is fairly good.
-
-#           If we want to see the constants used to generate the line we can type the following.
-
-# print('Coefficient: \n', linear.coef_) # These are each slope value
-# print('Intercept: \n', linear.intercept_) # This is the intercept
-
-#           Seeing a score value is cool but I'd like to see how well our algorithm works on specific students. To do this we are going to print out all of our test data. Beside this data we will print the actual final grade and our models predicted grade.
-
-# predictions = linear.predict(x_test) # Gets a list of all predictions
-
-# for x in range(len(predictions)):
-  #   print(predictions[x], x_test[x], y_test[x])
