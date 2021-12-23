@@ -1,6 +1,7 @@
 # model de ML care prezice o nota a unui elev bazat pe note trecute, ore de studiu, si alte atribute
 # folosim linear regression
 
+
 import pandas as pd
 import numpy as np
 import sklearn
@@ -8,6 +9,7 @@ from sklearn import linear_model
 from sklearn.utils import shuffle
 import matplotlib.pyplot as pyplot
 import pickle
+from matplotlib import style
 
 data = pd.read_csv("student-mat.csv", sep=";")  # asa o sa citeasca datele din document, iar fiecare atribut este delimitat de un ; de aceea o sa setam delimitatorul sa fie ; astfel o sa stie de unde sa ia datele
 
@@ -35,11 +37,54 @@ x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y
 # test_size reprezinta procentul de date pe care le impartim la cele 4 sub seturi de date: x_train, y_train, x_test, y_test
 
 
+# cu bucata asta salvam modelul
+"""
 linear = linear_model.LinearRegression() # aici definim ca o sa folosim linear regression
 
 linear.fit(x_train, y_train) # aici ii dam subseturile de date cu care trebuie sa lucreze
 acc = linear.score(x_test, y_test) # aici o sa returneze cat de precis este modelul
+
 print("precizia modelului: " + str(acc))
+
+# salvarea modelului pentru rulari viitoare cu alte valori pentru acele atribute se foloseste libraria pickle
+with open("studentmodel.pickle", "wb") as f:
+    pickle.dump(linear, f)"""
+# pana aici
+
+
+# pentru salvarea celui mai bun model
+# se ruleaza o data dupa se scoate pentru ca avem salvat modelul cel mai bun dupa cele n rulari din forul de mai jos
+"""
+best = 0
+for _ in range(30):
+    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y, test_size=0.1)
+
+    linear = linear_model.LinearRegression()  # aici definim ca o sa folosim linear regression
+
+    linear.fit(x_train, y_train)  # aici ii dam subseturile de date cu care trebuie sa lucreze
+    acc = linear.score(x_test, y_test)  # aici o sa returneze cat de precis este modelul
+
+    print("precizia modelului: " + str(acc))
+
+    if acc > best:
+        # salvarea modelului pentru rulari viitoare cu alte valori pentru acele atribute se foloseste libraria pickle
+        with open("studentmodel.pickle", "wb") as f:
+            pickle.dump(linear, f)
+"""
+
+
+#########
+
+
+
+# asa putem sa folosim un model deja antrenat
+pickle_in = open("studentmodel.pickle", "rb")
+linear = pickle.load(pickle_in)
+# pana aici
+
+
+
+
 
 print('Coefficient: \n', linear.coef_)
 print('Intercept: \n', linear.intercept_)
@@ -48,3 +93,31 @@ predictions = linear.predict(x_test) # pana acum am folosit x_train si y_train c
 
 for x in range(len(predictions)):
     print("predictia modelului: " + str(predictions[x]) + " atributele: " + str(x_test[x]) + " labelul: " + str(y_test[x]))
+
+
+# afisare date pe un grafic
+
+p = "G1"
+
+style.use("ggplot")
+pyplot.scatter(data[p], data["G3"])
+pyplot.xlabel(p)
+pyplot.ylabel("final grade")
+pyplot.show()
+
+#  pana aici
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
