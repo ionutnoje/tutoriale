@@ -29,7 +29,7 @@ for j in range(n):
     print(lista[j])
 
 # lista.remove("pizza")     sterge valoarea cu numele pizza din lista
-# lista.insert(0,"ceva")    pe indexul 0 din lista o sa se insereza valoarea ceva
+# lista.insert(0,"linear_regression1")    pe indexul 0 din lista o sa se insereza valoarea linear_regression1
 # lista.sort()  o sa sorteze in ordine alfabetica lista
 # lista.clear()     o sa stearga tot din lista
 
