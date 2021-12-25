@@ -6,6 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from keras.models import Sequential
 from tensorflow.keras.models import Sequential
+import os
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"   # ca sa nu mai apara warningurile de la inceput :)
 
 data = keras.datasets.fashion_mnist
 
@@ -83,6 +86,7 @@ model = keras.Sequential([  # keras.sequential inseamna o inlantuire de layere d
 
 """
 
+# documentarie pentru tipuri de modele puse la dispozitie de keras (https://keras.io/api/models/)
 model = keras.Sequential([  # keras.sequential inseamna o inlantuire de layere de neuroni pe care urmeaza sa
     # le definim mai jos
     keras.layers.Flatten(input_shape=(28, 28)),  # asta este input layer, despre flatten am scris mai sus
@@ -111,7 +115,7 @@ model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=
 #                   the other class.
 
 
-model.fit(train_images, train_labels, epochs=5)
+model.fit(train_images, train_labels, epochs=8)
 # epochs reprezinta de cate ori o sa dam aceeasi poza la modelul nosru, in acest caz 5
 # in fiecare epach o sa primeasca aceleasi poze dar intr o ordine diferita
 # ca sa se antreneze
