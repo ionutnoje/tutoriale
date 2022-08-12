@@ -46,3 +46,21 @@ int main(){
     back(1);
     return 0;
 }
+
+
+/*
+//EXPLICATII SUPLIMENTARE
+alegem un numar de la tastatura
+toate numerele pana la numarul ales inclusiv o sa intre in program
+
+incepem rularea backtrackingului prin apelarea functiei backtracking cu valoare 1...adica cu prima pozitie din vector/stiva
+din for o sa se atribuie valoarea 1 pe prima pozitie urmand sa se faca verificarile...cum nu este o solutie........
+solutie este numai cand este si validat si si toate cele n spatii din vector sunt ocupate...in acest caz o singura pozitie este ocupata...
+deci se continua executia prin apelarea backtracking(k+1) adica 2...pozitia urmatoare din vector...prin urmare
+for ul principal incepe de la 1...[(mereu cand facem backtracking(k+1),forul principal o sa inceapa de la 1, cand revenim la backtracking(k-1)
+ adica revenim la o pozitie mai jos in vector, atunci se continua de la i ul de la care am plecat cand am apelat backtracking(k+1), si se continua din punctul restpectiv)]
+incontinuare se fac verificarile adica validarea si solutia....iar dupa ce avem prima solutie, o printam.In continuare revenim la backtrackingul cu o pozitie mai jos
+adica k-1, si se atribuie valoarea urmatoare din for, depinzand aici la ce valoare al lui i am ramas...si tot asa
+
+
+*/

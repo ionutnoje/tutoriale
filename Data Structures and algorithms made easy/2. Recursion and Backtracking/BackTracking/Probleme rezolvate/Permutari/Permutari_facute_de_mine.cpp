@@ -52,6 +52,7 @@ void PermutariBackTracking(int k)
             if(Solutie(k) == true)
             {
                 Afisare();
+
             }
             else
             {
