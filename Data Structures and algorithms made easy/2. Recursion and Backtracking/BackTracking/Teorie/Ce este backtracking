@@ -1,0 +1,36 @@
+Backtracking este o îmbunătățire a abordării forței brute. Este sistematic
+caută o soluție la o problemă printre toate opțiunile disponibile. În
+revenind înapoi, începem cu o opțiune posibilă din multe opțiuni disponibile
+și să încercăm să rezolvăm problema dacă suntem capabili să rezolvăm problema cu cei selectați
+mutați apoi vom tipări soluția, altfel vom reveni și vom selecta unele
+alta varianta si incearca sa o rezolvi. Dacă niciuna, dacă opțiunile funcționează, vom pretinde asta
+nu exista solutie pentru problema.
+Backtracking este o formă de recursivitate. Scenariul obișnuit este că te confrunți
+cu un număr de opțiuni și trebuie să alegeți una dintre acestea. După ce faci
+alegerea ta, vei primi un nou set de opțiuni; exact ce set de opțiuni primești
+depinde ce alegere ai facut. Această procedură se repetă din nou și din nou
+până ajungi la o stare finală. Dacă ai făcut o succesiune bună de alegeri, finala ta
+statul este o stare de scop; dacă nu ai făcut-o, nu este.
+Backtracking poate fi gândit ca o metodă selectivă de traversare a arborelui/grafic. The
+arborele este o modalitate de a reprezenta o poziție inițială de pornire (nodul rădăcină) și a
+starea finală a obiectivului (una dintre frunze). Backtracking ne permite să facem față situațiilor
+în care o abordare brută cu forță brută ar exploda într-un număr imposibil
+de opțiuni de luat în considerare. Backtracking este un fel de forță brută rafinată. La fiecare
+nod, eliminăm alegerile care în mod evident nu sunt posibile și procedăm la
+verificați recursiv numai pe cele care au potențial.
+Ceea ce este interesant în ceea ce privește întoarcerea este că facem backup doar atât cât este necesar
+ajunge la un punct de decizie anterior cu o alternativă încă neexploratată. În general,
+acesta va fi la cel mai recent punct de decizie. În cele din urmă, din ce în ce mai multe dintre acestea
+punctele de decizie vor fi explorate pe deplin și va trebui să ne întoarcem
+tot mai departe. Dacă ne întoarcem până la starea noastră inițială și avem
+explorat toate alternativele de acolo, putem concluziona că problema particulară este
+de nerezolvat. Într-un astfel de caz, vom fi făcut toată munca exhaustivului
+recursivitate și știut că nu există o soluție viabilă posibilă.
+• Uneori, cel mai bun algoritm pentru o problemă este să încercați toate posibilitățile.
+• Acest lucru este întotdeauna lent, dar există instrumente standard care pot fi folosite pentru a ajuta.
+• Instrumente: algoritmi pentru generarea de obiecte de bază, cum ar fi șiruri binare [2
+n
+posibilități pentru șir de n biți], permutări [n!], combinații [n!/r!(n)– r)!], șiruri generale [k – șiruri
+ de caractere de lungime n are k la n posibilități],
+
+• Backtracking accelerează căutarea exhaustivă prin tăiere

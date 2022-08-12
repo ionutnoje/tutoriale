@@ -1,0 +1,31 @@
+O funcție recursivă îndeplinește o sarcină parțial apelându-se pentru a efectua
+subsarcini. La un moment dat, funcția întâmpină o sarcină secundară pe care o poate îndeplini
+fără a se numi. Acest caz, în care funcția nu se repetă, se numește
+caz de baza. Primul, unde funcția se autoinvocă pentru a efectua o subsarcină, este
+denumit cazul ecursiv.
+
+
+    if(test for the base case)
+        return some base case value
+    else if(test for another base case)
+        return some other base case value
+    // the recursive case
+    else
+        return (some work and then a recursive call)
+
+
+
+
+
+• Algoritmii recursivi au două tipuri de cazuri, cazuri recursive și de bază
+cazuri.
+• Fiecare caz de funcție recursiv trebuie să se termine la un caz de bază.
+• În general, soluțiile iterative sunt mai eficiente decât soluțiile recursive
+[din cauza supraîncărcării apelurilor de funcții].
+• Un algoritm recursiv poate fi implementat fără funcție recursivă
+apelează folosind o stivă, dar de obicei este mai multă problemă decât valoarea sa. Acea
+înseamnă că orice problemă care poate fi rezolvată recursiv poate fi, de asemenea, rezolvată
+iterativ.
+• Pentru unele probleme, nu există algoritmi iterativi evidenti.
+• Unele probleme sunt cele mai potrivite pentru soluții recursive, în timp ce altele sunt
+nu.
