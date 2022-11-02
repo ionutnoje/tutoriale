@@ -18,8 +18,7 @@ denumit cazul ecursiv.
 
 
 • Algoritmii recursivi au două tipuri de cazuri, cazuri recursive și de bază
-cazuri.
-• Fiecare caz de funcție recursiv trebuie să se termine la un caz de bază.
+• Fiecare caz de funcție recursiva trebuie să se termine la un caz de bază.
 • În general, soluțiile iterative sunt mai eficiente decât soluțiile recursive
 [din cauza supraîncărcării apelurilor de funcții].
 • Un algoritm recursiv poate fi implementat fără funcție recursivă
