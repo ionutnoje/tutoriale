@@ -56,3 +56,39 @@ python_list = python_list + python_list # nu o sa se adune valorile celor 2 list
 for i in python_list:
     print(i)
 print("\n")
+
+
+
+# inmultirea unui array numpy
+print(2 * numpy_array)
+
+# inmultirea listei python
+
+print(2 * python_list) # o sa printeze de 2 ori continutul listei
+
+
+#ridicare la putere a array numpy
+print(numpy_array**2)
+
+#ridicare la putere a python list
+#print(python_list**2) # nu poate sa faca asa ceva....nu suporta
+
+#alte operatii posibile cu numpy
+
+numpy_array = np.sqrt(numpy_array)
+for i in numpy_array:
+    print(i)
+print("\n")
+
+
+numpy_array = np.exp(numpy_array)
+for i in numpy_array:
+    print(i)
+print("\n")
+
+
+
+numpy_array = np.log(numpy_array)
+for i in numpy_array:
+    print(i)
+print("\n")
