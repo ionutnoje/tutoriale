@@ -17,6 +17,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Pandas\2. Load data\data_nou_csv.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\2. Load data\pokemon_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
