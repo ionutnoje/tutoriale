@@ -222,6 +222,6 @@ data.to_excel("data_nou_excel.xlsx", index=False) # o sa il salveze in format ex
 
 
 
-
+#https://youtu.be/vmEHCJofslg?t=1943
 
 
