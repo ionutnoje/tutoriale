@@ -1,6 +1,9 @@
 import os
 import tensorflow as tf
 
+#what is a tensor:  https://www.youtube.com/watch?v=f5liqUk0ZTw&ab_channel=DanFleisch
+
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # ca sa nu ne mai apara scrisul rosu de la tensor in consola
 
 physical_devices = tf.config.list_physical_devices('GPU')

@@ -14,6 +14,13 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 x_train = x_train.reshape(-1, 28 * 28).astype("float32") / 255.0 #transformam inputurile intr un numpy vector de 784 spatii
 x_test = x_test.reshape(-1, 28 * 28).astype("float32") / 255.0
 
+#folosim -1 pentru ca trebuie sa convertim matricea primita ca vectori cu valori intre 0 si 1
+#o poza de 28 pe 28 o sa fie transformata intr un vector cu 784 spatii
+#deci x_train o sa contina toti acesti vectori
+#folosim -1 pentru ca nu stiu cati vectori o sa avem, adica cate poze intra in training deci o sa calculeze calculatorul asta
+#daca stim exact cate poza o sa avem pentru training putem sa schimbam valoarea -1 in acel nr
+
+
 ## Sequential API (Very convenient, not very flexible)
 #model = keras.Sequential(
 #    [
@@ -47,7 +54,6 @@ model.fit(x_train, y_train, batch_size=32, epochs=5, verbose=2) # aici pornim ru
 model.evaluate(x_test, y_test, batch_size=32, verbose=2) # aici trecem la datele din testare
 
 print(model.summary()) #putem sa printam numai dupa model.fit sau daca folosim adaugarea layerelor cu add atunci se poate si mai sus
-
 
 
 
