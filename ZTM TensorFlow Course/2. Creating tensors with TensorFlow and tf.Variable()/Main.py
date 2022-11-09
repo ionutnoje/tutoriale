@@ -57,4 +57,3 @@ tensor(created with tf.variable) the same way we would acces a value of an array
 """
 
 
-#C:\Users\noje\Desktop\cursuri personale\inteligenta artificiala\[FreeCourseSite.com] Udemy - TensorFlow Developer Certificate in 2021 Zero to Mastery\2. Deep Learning and TensorFlow Fundamentals\12. Creating random tensors with TensorFlow.mp4
