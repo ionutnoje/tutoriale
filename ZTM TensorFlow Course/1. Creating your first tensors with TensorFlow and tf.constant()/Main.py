@@ -88,5 +88,26 @@ PERSONAL EXPLANATION:
 If the tensors are rank-1, then it decreases visual understand by replacing our orthogonal triplet of easily visualized arrows:
 (x^,y^,z^)
 
-the number of dimensions is directly correlated with the number of versors (versori)
+the number of dimensions is directly correlated with the number of versors (versori)(edit: wrong)
+
+EXAMPLE: 
+
+numpy_A = np.arange(1, 25, dtype=np.int32)  # create a NumPy array between 1 and 25
+A = tf.constant(numpy_A,shape=[2, 3, 4])  # note: the shape total (2*4*3) has to match the number of elements in the
+# array
+
+So here A will have 3 dimensions because we have 2 matrix es, each with 3 rows and 4 elements on each row,
+that's why we have 3 dimensions
+
+numpy_A has 1 dimension because it is an array with 24 elements
+
+
+A = tf.constant(numpy_A,shape=[6, 4]) - this one will have 2 dimensions, watch the number of brackets in the output(2)
+                                        so it's just this matrix [matrix]
+A = tf.constant(numpy_A,shape=[1, 6, 4]) - this will have 3 dimensions, so here we can have multiple matrix es in the
+                                            output: [[matrix1],
+                                                     [matrix2]]
+                                            here matrix2 will be null because we don't have elements for it
+
+
 """
