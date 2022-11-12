@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\tensorflow-deep-learning-main\extras\BTC_USD_2013-10-01_2021-05-18-CoinDesk.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
