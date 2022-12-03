@@ -1,8 +1,8 @@
-# 1 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\C++\\NoOOP\\pointers(freeCodeCamp)\\1Character arrays and pointers\\Main.cpp"
-# 1 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\C++\\NoOOP\\pointers(freeCodeCamp)\\1Character arrays and pointers//"
+# 1 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\Mastering Data Structures & Algorithms using C and C++ Course\\1. Essential C and C++ Concepts\\1. Arrays Basics\\Dynamic array.cpp"
+# 1 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\Mastering Data Structures & Algorithms using C and C++ Course\\1. Essential C and C++ Concepts\\1. Arrays Basics//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\C++\\NoOOP\\pointers(freeCodeCamp)\\1Character arrays and pointers\\Main.cpp"
+# 1 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\Mastering Data Structures & Algorithms using C and C++ Course\\1. Essential C and C++ Concepts\\1. Arrays Basics\\Dynamic array.cpp"
 # 1 "C:/Program Files/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream" 1 3
 # 36 "C:/Program Files/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream" 3
        
@@ -26550,30 +26550,60 @@ namespace std
 
 
 }
-# 2 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\C++\\NoOOP\\pointers(freeCodeCamp)\\1Character arrays and pointers\\Main.cpp" 2
+# 2 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\Mastering Data Structures & Algorithms using C and C++ Course\\1. Essential C and C++ Concepts\\1. Arrays Basics\\Dynamic array.cpp" 2
 
 
-
-# 4 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\C++\\NoOOP\\pointers(freeCodeCamp)\\1Character arrays and pointers\\Main.cpp"
+# 3 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\Mastering Data Structures & Algorithms using C and C++ Course\\1. Essential C and C++ Concepts\\1. Arrays Basics\\Dynamic array.cpp"
 using namespace std;
-# 20 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\C++\\NoOOP\\pointers(freeCodeCamp)\\1Character arrays and pointers\\Main.cpp"
-void print(char C[])
+
+
+
+void printArray(int* array, int nrOfElements)
 {
-    int i = 0;
-    while(C[i] != '\0')
-    {
-        printf("%c", C[i]);
-        i++;
+    cout << array << endl;
+    for (int j = 0; j < nrOfElements; j++) {
+        cout << "A[" << j << "]= " << array[j] << endl;
     }
-    printf("\n");
-# 40 "C:\\Users\\noje\\Desktop\\proiecte personale\\tutoriale\\tutoriale\\C++\\NoOOP\\pointers(freeCodeCamp)\\1Character arrays and pointers\\Main.cpp"
 }
+
 
 
 int main()
 {
-    char C[20] = "hello";
-    print(C);
+    int numberOfElements;
+
+    cout << "number of elements: " << endl;
+    cin >> numberOfElements;
+
+
+    int* array = new int[numberOfElements];
+
+
+    if (array == nullptr)
+    {
+        cout << "the array was not created / has no space allocated" << endl;
+    }
+    else
+    {
+
+        for (int i = 0; i < numberOfElements; i++)
+        {
+            cout << "array[" << i << "]= ";
+            cin >> array[i];
+        }
+    }
+
+
+    for (int j = 0; j < numberOfElements; j++) {
+        cout << "A[" << j << "]= " << array[j] << endl;
+    }
+
+
+    printArray(array, numberOfElements);
+    delete[] array;
+
+
+
 
     return 0;
 }
