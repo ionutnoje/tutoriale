@@ -17,7 +17,7 @@
             "browse": {
                 "path": [
                     "${workspaceRoot}",
-                    "C:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.1.0"
+                    "C:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0"
                 ]
             }
         }
