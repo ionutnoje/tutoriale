@@ -89,3 +89,9 @@ int main()
 
     return 0;
 }
+
+/**
+ concluzii:
+    la orice functie un vector este trimis ca si referinta:))
+    
+*/
