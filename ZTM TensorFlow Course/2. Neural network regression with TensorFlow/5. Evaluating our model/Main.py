@@ -91,7 +91,7 @@ tf.random.set_seed(42)
 
 #  Creating the model
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(1, input_shape=[1]),  # layer input
+    tf.keras.layers.Dense(1, input_shape=[1]),  # layer input?
     tf.keras.layers.Dense(100, activation="relu"),  # hidden layer1
     tf.keras.layers.Dense(100, activation="relu"),  # hidden layer2
     tf.keras.layers.Dense(1)  # layer output
@@ -158,5 +158,146 @@ plot_predictions(train_data=X_train,
                  test_data=X_test,
                  test_labels=y_test,
                  predictions=y_preds)
+
+#  plot_model(model=model, show_shapes=True)
+
+
+"""
+Evaluating predictions
+Alongside visualizations, evaluation metrics are your alternative best option for evaluating your model.
+
+Depending on the problem you're working on, different models have different evaluation metrics.
+
+Two of the main metrics used for regression problems are:
+
+Mean absolute error (MAE) - the mean difference between each of the predictions. Mean squared error (MSE) - the 
+squared mean difference between of the predictions (use if larger errors are more detrimental than smaller errors). 
+The lower each of these values, the better. 
+
+You can also use model.evaluate() which will return the loss of the model as well as any metrics setup during the compile step.
+"""
+
+# Evaluate the model on the test set
+print(model.evaluate(X_test, y_test))
+
+"""
+In our case, since we used MAE for the loss function as well as MAE for the metrics, model.evaluate() returns them both.
+
+TensorFlow also has built in functions for MSE and MAE.
+
+For many evaluation functions, the premise is the same: compare predictions to the ground truth labels.
+"""
+
+# Calculate the mean absolute error
+mae = tf.metrics.mean_absolute_error(y_true=y_test,
+                                     y_pred=y_preds)
+print(mae)
+
+"""
+Huh? That's strange, MAE should be a single output.
+
+Instead, we get 10 values.
+
+This is because our y_test and y_preds tensors are different shapes.
+"""
+
+"""
+Remember how we discussed dealing with different input and output shapes is one the most common issues you'll come across, this is one of those times.
+
+But not to worry.
+
+We can fix it using squeeze(), it'll remove the the 1 dimension from our y_preds tensor, making it the same shape as y_test.
+
+🔑 Note: If you're comparing two tensors, it's important to make sure they're the right shape(s) (you won't always 
+have to manipulate the shapes, but always be on the look out, many errors are the result of mismatched tensors, 
+especially mismatched input and output shapes). 
+"""
+
+# Shape before squeeze()
+print(y_preds.shape)
+
+# Shape after squeeze()
+print(y_preds.squeeze().shape)
+
+# What do they look like?
+print(y_test, y_preds.squeeze())
+
+
+"""
+Okay, now we know how to make our y_test and y_preds tenors the same shape, let's use our evaluation metrics.
+"""
+
+# Calculate the MAE
+mae = tf.metrics.mean_absolute_error(y_true=y_test,
+                                     y_pred=y_preds.squeeze())  # use squeeze() to make same shape
+print(mae)
+
+
+# Calculate the MSE
+mse = tf.metrics.mean_squared_error(y_true=y_test,
+                                    y_pred=y_preds.squeeze())
+print(mse)
+
+
+# We can also calculate the MAE using pure TensorFlow functions.
+# Returns the same as tf.metrics.mean_absolute_error()
+tf.reduce_mean(tf.abs(y_test-y_preds.squeeze()))
+
+"""
+Again, it's a good idea to function anything you think you might use over again (or find yourself using over and over again).
+
+Let's make functions for our evaluation metrics.
+"""
+
+
+def mae(y_test, y_pred):
+    """
+    Calculates mean absolute error between y_test and y_preds.
+    """
+    return tf.metrics.mean_absolute_error(y_test,
+                                          y_pred)
+
+def mse(y_test, y_pred):
+    """
+    Calculates mean squared error between y_test and y_preds.
+    """
+    return tf.metrics.mean_squared_error(y_test,
+                                         y_pred)
+
+
+"""Saving a model Once you've trained a model and found one which performs to your liking, you'll probably want to 
+save it for use elsewhere (like a web application or mobile device). 
+
+You can save a TensorFlow/Keras model using model.save().
+
+There are two ways to save a model in TensorFlow:
+
+The SavedModel format (default). The HDF5 format. The main difference between the two is the SavedModel is 
+automatically able to save custom objects (such as special layers) without additional modifications when loading the 
+model back in. 
+
+Which one should you use?
+
+It depends on your situation but the SavedModel format will suffice most of the time.
+
+Both methods use the same method call.
+"""
+
+
+# Save a model using the SavedModel format
+model.save('primul_model1')
+print("model salvat")       
+#INFO:tensorflow:Assets written to: best_model_SavedModel_format/assets
+# Check it out - outputs a protobuf binary file (.pb) as well as other files
+#!ls best_model_SavedModel_format
+#Now let's save the model in the HDF5 format, we'll use the same method but with a different filename.
+
+# Save a model using the HDF5 format
+# model.save("best_model_HDF5_format.h5") # note the addition of '.h5' on the end
+# Check it out
+# !ls best_model_HDF5_format.h5)
+# best_model_HDF5_format.h5
+
+
 
 
