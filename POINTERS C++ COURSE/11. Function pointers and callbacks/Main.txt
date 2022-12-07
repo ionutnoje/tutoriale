@@ -1,0 +1,28 @@
+#include <iostream>
+
+void A()
+{
+    std::cout << "Hello" << std::endl;
+}
+
+void B(void (*ptr)())   //function pointer as argument
+{
+    ptr();    //call back the function that "ptr" points to
+}
+
+int main()
+{
+    /*
+    void (*p)() = A;
+    
+    B(p);
+    */
+    
+    B(A);   // the name of a function returns a pointer that points to that function
+            // A is callback function
+
+
+
+
+    return 0;
+}
