@@ -77,6 +77,16 @@ void increment(int *a)
     std::cout << "\n";
 }
 
+void increment_ref(int &a)
+{
+    a = a + 1;
+
+    std::cout << "value of a from increment method after incrementation ref: " << a << std::endl;
+    std::cout << "adress of a from main method: " << a << std::endl;
+    std::cout << "adress of a from increment method: " << &a << std::endl;
+    std::cout << "\n";
+}
+
 
 int main()
 {
@@ -85,6 +95,12 @@ int main()
 
     //calling the method
     increment(&a);
+
+    std::cout << "value of a from main method after incrementation: " << a << std::endl;
+    std::cout << "adress of a from main method: " << &a << std::endl;
+    std::cout << "\n";
+
+    increment_ref(a);
 
     std::cout << "value of a from main method after incrementation: " << a << std::endl;
     std::cout << "adress of a from main method: " << &a << std::endl;
