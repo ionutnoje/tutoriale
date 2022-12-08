@@ -2,7 +2,7 @@
 
 int **create(int nr_of_lines, int nr_of_columns, void (*afisare)(int**, int, int))
 {
-    int **matrix; //nu trebuie setat ca static pentru ca din functiile din afara mainului memoria este alocata pe heap
+    int **matrix; //nu trebuie setat static pentru ca din functiile din afara mainului memoria este alocata pe heap
                     //iar din heap memoria o stergem noi manual
     matrix = new int* [nr_of_lines];
 
@@ -62,6 +62,18 @@ int main()
         std:: cout << "\n";
     }
 
+    for (int w = 0; w < nr_of_lines; w++)
+        delete[] matrice[w];
     delete[] matrice;
+
+    for(int j = 0; j < nr_of_lines; j++)
+    {
+        for(int k = 0; k < nr_of_columns; k++)
+        {
+            std::cout << "   M[" << j << "][" << k <<  "]= " << matrice[j][k];
+        }
+        std:: cout << "\n";
+    }
+
     return 0;
 }
