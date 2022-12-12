@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 int **create(int nr_of_lines, int nr_of_columns, void (*afisare)(int**, int, int))
 {
     int **matrix; //nu trebuie setat static pentru ca din functiile din afara mainului memoria este alocata pe heap
@@ -11,6 +12,7 @@ int **create(int nr_of_lines, int nr_of_columns, void (*afisare)(int**, int, int
         matrix[i] = new int [nr_of_columns];
     }
 
+    
 
     for(int j = 0; j < nr_of_lines; j++)
     {
@@ -30,6 +32,8 @@ int **create(int nr_of_lines, int nr_of_columns, void (*afisare)(int**, int, int
 
 void print_matrix(int **matrice, int nr_of_lines, int nr_of_columns)
 {
+    int a = 5;
+
     for(int j = 0; j < nr_of_lines; j++)
     {
         for(int k = 0; k < nr_of_columns; k++)
@@ -38,6 +42,7 @@ void print_matrix(int **matrice, int nr_of_lines, int nr_of_columns)
         }
         std:: cout << "\n";
     }
+
 }
 
 
