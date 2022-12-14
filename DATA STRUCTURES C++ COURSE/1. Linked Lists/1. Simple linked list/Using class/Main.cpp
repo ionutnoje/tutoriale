@@ -14,6 +14,7 @@ int main()
     int option;
     bool initialized = false;
     Linkedlist* list ;
+    int min, max;
 
 
 	do{
@@ -60,47 +61,61 @@ int main()
                 break;
             
             case 3:
-                list->inserare_sfarsit();
+                list->inserare_inceput();
                 break;
             
             case 4:
-                list->inserare_sfarsit();
+                list->inserare_pozitie();
                 break;
             
             case 5:
-                list->inserare_sfarsit();
+                list->stergere_sfarsit();
                 break;
             
             case 6:
-                list->inserare_sfarsit();
+                list->stergere_inceput();
                 break;
             
             case 7:
-                list->inserare_sfarsit();
+                list->stergere_pozitie();
                 break;
             
             case 8:
-                list->inserare_sfarsit();
+                list->actualizare();
                 break;
 
             case 9:
-                list->inserare_sfarsit();
+                list->cautare();
                 break;
 
             case 10:
-                list->inserare_sfarsit();
+                min = list->min_lista();
+                std::cout << "Minimum: " << min << std::endl;
+                getchar();
+                getchar();
                 break;
 
             case 11:
-                list->inserare_sfarsit();
+                max = list->max_lista();
+                std::cout << "Maximum: " << max << std::endl;
+                getchar();
+                getchar();
                 break;
 
             case 12:
-                list->inserare_sfarsit();
+                list->sortare_lista();
                 break;
 
             case 13:
-                list->afisare();
+                if(initialized == true)
+                {
+                    list->afisare();    
+                }
+                else
+                {
+                    std::cout << "Uninitialized list" << std::endl;
+                }
+                
                 getchar();
                 getchar();
                 break;
