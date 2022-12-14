@@ -1,0 +1,62 @@
+#include <iostream>
+
+struct Node {
+  int data;
+  Node* left;
+  Node* right;
+};
+
+// Function to create a new node
+Node* createNode(int data) {
+  Node* node = new Node();
+  node->data = data;
+  node->left = nullptr;
+  node->right = nullptr;
+  return node;
+}
+
+// Function to insert a new node in the binary search tree
+void insert(Node*& root, int data) {
+  if (root == nullptr) {
+    root = createNode(data);
+    return;
+  }
+
+  if (data < root->data) {
+    insert(root->left, data);
+  } else {
+    insert(root->right, data);
+  }
+}
+
+// Function to search for a given value in the binary search tree
+bool search(Node* root, int data) {
+  if (root == nullptr) {
+    return false;
+  }
+
+  if (root->data == data) {
+    return true;
+  }
+
+  if (data < root->data) {
+    return search(root->left, data);
+  } else {
+    return search(root->right, data);
+  }
+}
+
+// Driver code
+int main() {
+  Node* root = nullptr;
+
+  insert(root, 8);
+  insert(root, 3);
+  insert(root, 10);
+  insert(root, 1);
+  insert(root, 6);
+  insert(root, 14);
+  insert(root, 4);
+
+  return 0;
+}
