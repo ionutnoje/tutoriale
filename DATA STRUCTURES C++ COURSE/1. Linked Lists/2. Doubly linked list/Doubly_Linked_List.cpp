@@ -6,10 +6,12 @@ struct node *initializare();
 struct node *adaugare_inceput();
 struct node *adaugare_sfarsit();
 struct node *adaugare_poz();
-struct node *crearea_lista_full();
 struct node *stergere_primul_nod();
 struct node *stergere_ultimul_nod();
 struct node *stergere_poz();
+void coutare(struct node* head);
+void swap();
+void sortare_lista();
 
 
 
@@ -55,7 +57,6 @@ struct node *initializare()
 
     return head;
 }
-
 
 struct node* adaugare_sfarsit(struct node* head)
 {
@@ -177,6 +178,135 @@ struct node* adaugare_poz(struct node* head)
 
 }
 
+struct node* stergere_primul_nod(struct node* head)
+{
+    struct node *temp = head;
+    head = head->succ;
+    free(temp);
+    temp = NULL;
+    head->pred = NULL;
+    
+    return head;
+}
+
+struct node* stergere_ultimul_nod(struct node* head)
+{
+    struct node *temp = head;
+    struct node *temp2;
+    while(temp->succ != NULL)
+    {
+        temp = temp->succ;
+    }
+    temp2 = temp->pred;
+    temp2->succ = NULL;
+    free(temp);
+
+    return head;
+}
+
+struct node* stergere_poz(struct node* head)
+{   
+    int poz;
+
+    if(head == NULL)
+    {
+        std::cout << "\nlista goala" << std::endl;
+    }
+
+    std::cout << "\npozitia: ";
+    std::cin >> poz;
+
+    struct node *temp = head;
+    struct node *temp2 = NULL;
+
+    if(poz == 1)
+    {
+        head = stergere_primul_nod(head);
+        return head;
+    }
+    while(poz > 1)
+    {
+        temp = temp->succ;
+        poz--;
+    }
+    if(temp->succ == NULL)
+    {
+        head = stergere_ultimul_nod(head);
+    }
+    else
+    {
+        temp2 = temp->pred;
+        temp2->succ = temp->succ;
+        temp->succ->pred = temp2;
+        free(temp);
+        temp = NULL;
+    }
+
+    return head;
+}
+
+void cautare(struct node* head)
+{
+    int val; 
+
+    std::cout << "\nval cautata: ";
+    std::cin >> val;
+
+    if(head == NULL)
+    {
+        std::cout << "\nlista goala" << std::endl;
+        
+    }
+
+    while(head != NULL)
+    {
+        if(head->data == val)
+        {
+            std::cout << "valoarea " << val << " a fost gasita" << std::endl;
+            break;
+        }
+        head = head->succ;
+    }
+}
+
+void swap(struct node* val1, struct node* val2)
+{
+    struct node* temp = new struct node;
+
+    temp->data = val1->data;
+    val1->data = val2->data;
+    val2->data = temp->data;
+}
+
+void sortare_lista(struct node *head)
+{
+    int swapped, i;
+    struct node *ptr1;
+    struct node *lptr = NULL;
+  
+    
+    if (head == NULL)
+        printf("lista este goala");
+  
+    do
+    {
+        swapped = 0;
+        ptr1 = head;
+  
+        while (ptr1->succ != lptr)
+        {
+            if (ptr1->data > ptr1->succ->data)
+            { 
+                swap(ptr1, ptr1->succ);
+                swapped = 1;
+            }
+            ptr1 = ptr1->succ;
+        }
+        lptr = ptr1;
+    }
+    while (swapped);
+}
+
 int main()
 {
     struct node* head;
@@ -192,7 +322,18 @@ int main()
 
     head = adaugare_poz(head);
     print(head);
+    head = adaugare_poz(head);
+    print(head);
+    head = adaugare_poz(head);
+    print(head);
+    head = adaugare_poz(head);
+    print(head);
+    head = adaugare_poz(head);
+    print(head);
 
+    
+    sortare_lista(head);
+    print(head);
     
 
 
