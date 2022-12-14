@@ -7,7 +7,7 @@ class Linkedlist
 {
     public:
         
-        Node *head;
+        Node *head = NULL;
 
         static Linkedlist* getInstance();
         
@@ -215,14 +215,19 @@ void Linkedlist::stergere_sfarsit()
 
         if(temp->next == NULL)
         {
+            Node* temp = head;
+            head = head->next;
             free(temp);
         }
-        while(temp->next->next != NULL)
-        {
-            temp = temp->next;
+        else{
+            while(temp->next->next != NULL)
+            {
+                temp = temp->next;
+            }
+            free(temp->next);
+            temp->next = NULL;
         }
-        free(temp->next);
-        temp->next = NULL;
+        
 
     }
 }
