@@ -1,0 +1,167 @@
+#include <iostream>
+
+struct Node
+{
+    int data;
+    struct Node *next;
+};
+
+struct Node* initializare();
+void push();
+void pop();
+void afisare();
+
+
+struct Node* initializare()
+{
+    int data;
+
+    std::cout << "val element: ";
+    std::cin >> data;
+
+    struct Node* stack = new struct Node;
+    stack->data = data;
+    stack->next = NULL;
+
+    return stack;
+    
+}
+
+void push(struct Node* top)
+{
+    int data;
+
+    std::cout << "val element: ";
+    std::cin >> data;
+
+    struct Node *nodnou;
+    nodnou = new struct Node;
+    nodnou->data = data; 
+    
+    if(top == NULL)
+        nodnou->next = NULL;
+    else
+        nodnou->next = top; 
+        top = nodnou;
+        printf("nodul a fost adaugat\n\n");
+}
+
+void pop(struct Node* top)
+{
+    if(top == NULL)
+        printf("\nstiva goala\n");
+    else{
+        struct Node *temp = top;
+        printf("\nelementul sters : %d", temp->data);
+        printf("\n");
+        top = temp->next; 
+        free(temp);
+        }
+}
+
+void afisare(struct Node* top)
+{
+    if(top == NULL)
+        printf("\nstiva goala\n");
+    else
+    {
+        printf("stiva este \n");
+        struct Node *temp = top;
+            
+            while(temp->next != NULL)
+            {
+                printf("%d->",temp->data);
+                temp = temp -> next;
+            }
+    printf("%d->NULL\n\n",temp->data);
+
+    }
+}
+
+
+
+
+
+
+int main()
+{
+    int optiune, val,init = 0,contor = 0;
+    struct Node* top;
+    
+
+    do 
+   {
+        system("CLS");
+        std::cout<<"0) Intitializa"<<std::endl;
+        std::cout<<"1) Push in stack"<<std::endl;
+        std::cout<<"2) Pop from stack"<<std::endl;
+        std::cout<<"3) Display stack"<<std::endl;
+        std::cout<<"4) Exit"<<std::endl;
+        std::cout << "Enter choice: " << std::endl;
+        std::cin >> optiune;
+
+      switch(optiune) 
+      {
+        case 0: 
+         {   
+            top = initializare();
+            
+            break;
+         }
+         case 1: 
+         {   
+            push(top);
+            
+            break;
+         }
+         case 2: 
+         {
+            pop(top);
+            
+            break;
+         }
+         case 3: 
+         {
+            afisare(top);
+            getchar();
+            getchar();
+            break;
+         }
+         case 4: 
+         {
+            std::cout<<"Exit"<<std::endl;
+            break;
+         }
+         default: 
+         {
+            std::cout<<"Invalid Choice"<<std::endl;
+         }
+      }
+   }while(optiune!=4);
+    
+    
+
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
